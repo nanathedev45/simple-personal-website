@@ -1,11 +1,11 @@
-# Nana's simple website
+# My simple website
 
-A small two-page personal website built as a university student project.
+A small two-page website by Nana Yaw Opare-Koranteng.
 
-- `index.html` — home page with a saved notes list
-- `about.html` — about me, skills and a contact form
-- `css/style.css` — one shared stylesheet (Flexbox, Grid and a mobile layout)
-- `js/script.js` — saved theme toggle, notes stored in localStorage, contact form message
-- `images/avatar.svg` — avatar illustration
+- index.html - home page with a to-do list
+- about.html - about me, my skills and a contact form
+- css/style.css - the styles
+- js/script.js - dark mode button, to-do list and contact form message
+- images/avatar.svg - my picture
 
-No build step or dependencies. Open `index.html` in a browser to run it locally.
+No install needed. Open index.html in a browser to see it.

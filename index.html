@@ -3,47 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Nana's Website</title>
+  <title>Nana Yaw Opare-Koranteng</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Nana</a>
-      <nav aria-label="Main navigation">
-        <ul class="nav-list">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-      <button id="theme-toggle" type="button">Dark mode</button>
-    </div>
+
+  <!-- top of the page -->
+  <header>
+    <h1>Nana Yaw Opare-Koranteng</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+    <button id="dark-btn">Dark mode</button>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Welcome to my little corner of the web</h1>
-      <p>I'm Nana, a university student learning web development. This is a small, practical space for my notes and a bit about me.</p>
-    </section>
+  <main>
+    <h2>Welcome to my website</h2>
+    <p>I am Nana Yaw Opare-Koranteng. I made this small website to practise HTML, CSS and JavaScript.</p>
 
-    <section class="card" aria-labelledby="notes-heading">
-      <h2 id="notes-heading">Quick notes</h2>
-      <p>Jot down a to-do below. Your notes stay saved in this browser.</p>
-      <form id="note-form" class="note-form">
-        <label class="sr-only" for="note-input">New note</label>
-        <input id="note-input" name="note" type="text" placeholder="Add a note..." required>
-        <button type="submit">Add note</button>
-      </form>
-      <ul id="notes-list" class="notes-list"></ul>
-      <p id="notes-empty" class="muted">No notes yet — add one above.</p>
-    </section>
+    <h2>My to-do list</h2>
+    <p>Type something and click the button to add it.</p>
+    <input id="task-input" type="text" placeholder="Write a task">
+    <button id="add-btn">Add</button>
+    <ul id="task-list"></ul>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Nana. Built as a simple student project.</p>
-    </div>
+  <footer>
+    <p>Made by Nana Yaw Opare-Koranteng</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
