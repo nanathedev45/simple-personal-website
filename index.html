@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Nana's Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Nana</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" type="button">Dark mode</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome to my little corner of the web</h1>
+      <p>I'm Nana, a university student learning web development. This is a small, practical space for my notes and a bit about me.</p>
+    </section>
+
+    <section class="card" aria-labelledby="notes-heading">
+      <h2 id="notes-heading">Quick notes</h2>
+      <p>Jot down a to-do below. Your notes stay saved in this browser.</p>
+      <form id="note-form" class="note-form">
+        <label class="sr-only" for="note-input">New note</label>
+        <input id="note-input" name="note" type="text" placeholder="Add a note..." required>
+        <button type="submit">Add note</button>
+      </form>
+      <ul id="notes-list" class="notes-list"></ul>
+      <p id="notes-empty" class="muted">No notes yet — add one above.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Nana. Built as a simple student project.</p>
+    </div>
+  </footer>
+</body>
+</html>
