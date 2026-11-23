@@ -1,5 +1,19 @@
 /* My stylesheet */
 
+:root {
+  --bg: #f4f4f4;
+  --text: #222;
+  --bar: #ddd;
+  --card: #fff;
+}
+
+.dark {
+  --bg: #222;
+  --text: #fff;
+  --bar: #333;
+  --card: #444;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,27 +21,21 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #222;
+  background: var(--bg);
+  color: var(--text);
 }
 
-/* dark mode */
-.dark {
-  background: #222;
-  color: white;
+header,
+footer {
+  background: var(--bar);
+  padding: 15px;
 }
 
 header {
-  background: #ddd;
-  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.dark header {
-  background: #333;
 }
 
 header h1 {
@@ -41,21 +49,13 @@ nav {
 }
 
 nav a {
-  color: #222;
-}
-
-.dark nav a {
-  color: white;
+  color: var(--text);
 }
 
 main {
   max-width: 700px;
   margin: auto;
   padding: 20px;
-}
-
-img {
-  border-radius: 8px;
 }
 
 /* skills in two columns */
@@ -67,13 +67,11 @@ img {
   padding: 0;
 }
 
-.skills li {
-  background: white;
+.skills li,
+.project {
+  background: var(--card);
   padding: 10px;
-}
-
-.dark .skills li {
-  background: #444;
+  margin-bottom: 10px;
 }
 
 input,
@@ -91,12 +89,6 @@ button {
 
 footer {
   text-align: center;
-  padding: 15px;
-  background: #ddd;
-}
-
-.dark footer {
-  background: #333;
 }
 
 /* small screens */
